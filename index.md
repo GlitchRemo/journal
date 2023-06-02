@@ -6,8 +6,34 @@ InspiredFrom: Jayanth
 # TODO
 
 - validate `wc` closures testing idea from ashish
-- ask jayanth about process.stdout
-- english paper 2 portions
+
+# Jun 2
+
+- Tags in md
+  - heading and summary tag
+- Github pages
+  - entry file name :-
+    - index.md
+    - README.md
+    - index.html
+- further we can link other pages in entry page
+
+# Jun 1
+
+- Installed and created first file in Obsidian
+- Inspired by Nitin
+- Write purpose of a task before starting it
+
+# May 30
+
+- Ppt by Lakshmi and Subhash
+- Account name:- Atlassian
+- Ppt by Nitin and Manikantha
+- Account Name:- E4R
+- Project of ...
+  - Nitin -> Yaska
+- Nitin followed Getting Things Done during his project for tracking his todos
+- Tracking every learning, note things while learning
 
 # May 28
 
@@ -28,12 +54,17 @@ evening learnings
 
 -Jayanth's example in this context
 
+<details>
+<summary> code snippet </summary>
+
 ```js
 const identity = (x) => x;
 const doSomething = (f) => f(identity);
 
 doSomething([1, 2, 3].map);
 ```
+
+</details>
 
 - how is process.stdout.write a bounded fn?
 
@@ -55,35 +86,40 @@ doSomething([1, 2, 3].map);
   - today he tested all classes using dependency injection
   - created spy function
 
-  ```js
-  const createSpyFunction = () => {
-    let callCount = 0;
-    const fn = (...args) => {
-      fn.calls = [...(fn.calls || []), ...args];
-      callCount++;
-    };
+<details>
+<summary> code snippet </summary>
 
-    fn.wasCalledOnce = (arg) => callCount === 1 && fn.calls[0] === arg;
-    fn.wasCalledTwice = () => callCount === 2;
-    return fn;
+```js
+const createSpyFunction = () => {
+  let callCount = 0;
+  const fn = (...args) => {
+    fn.calls = [...(fn.calls || []), ...args];
+    callCount++;
   };
-  ```
 
-  ```js
-  const renderer = createSpyFunction();
-  const calc = new Calculator();
-  calc.render(renderer);
-  assert.ok(renderer.wasCalledOnce(0));
-  ```
+  fn.wasCalledOnce = (arg) => callCount === 1 && fn.calls[0] === arg;
+  fn.wasCalledTwice = () => callCount === 2;
+  return fn;
+};
+```
 
-  - We want to make every unit independently testable
-  - That's why we mock external dependencies and inject to the tested functions
-  - Especially the asynchronous functions we want to mock
-  - eg. setInterval, clearInterval, process.stdin, process.stdout, fs, stdin.\_readable.stopped = true
-  - 3 ways to inject dependencies :-
-    - through constructor
-    - through function parameters
-    - through setters
+```js
+const renderer = createSpyFunction();
+const calc = new Calculator();
+calc.render(renderer);
+assert.ok(renderer.wasCalledOnce(0));
+```
+
+</details>
+
+- We want to make every unit independently testable
+- That's why we mock external dependencies and inject to the tested functions
+- Especially the asynchronous functions we want to mock
+- eg. setInterval, clearInterval, process.stdin, process.stdout, fs, stdin.\_readable.stopped = true
+- 3 ways to inject dependencies :- - through constructor - through function parameters - through setters
+
+<details>
+<summary> code snippet </summary>
 
 ```js
 describe.skip;
@@ -92,6 +128,8 @@ beforeEach(() => {
   const write = createSpyFunction();
 });
 ```
+
+</details>
 
 - beforeEach is called before each it under the describe
 - before() is called only after entering into the current describe
