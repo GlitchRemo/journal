@@ -25,8 +25,8 @@ InspiredFrom: Jayanth
     - README.md
     - index.html
 - Further we can link other pages in entry page
-- Started developing interests in Creative coding
-- Got a MIT playlist on Deep Learning
+- Started developing interests in Creative coding.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
+- Got a MIT playlist on Deep Learning.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
 
 # Jun 1
 
