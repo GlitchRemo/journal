@@ -24,7 +24,9 @@ InspiredFrom: Jayanth
     - index.md
     - README.md
     - index.html
-- further we can link other pages in entry page
+- Further we can link other pages in entry page
+- Started developing interests in Creative coding
+- Got a MIT playlist on Deep Learning
 
 # Jun 1
 
