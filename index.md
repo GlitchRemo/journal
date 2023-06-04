@@ -93,8 +93,6 @@ evening learnings
   - yesterday we made io, repl and calculator classes
   - today he tested all classes using dependency injection
   - created spy function
-<details>
-  <summary>code snippet</summary>
 
 ```js
 const createSpyFunction = () => {
@@ -116,16 +114,12 @@ const calc = new Calculator();
 calc.render(renderer);
 assert.ok(renderer.wasCalledOnce(0));
 ```
-</details>
 
 - We want to make every unit independently testable
 - That's why we mock external dependencies and inject to the tested functions
 - Especially the asynchronous functions we want to mock
 - eg. setInterval, clearInterval, process.stdin, process.stdout, fs, stdin.\_readable.stopped = true
 - 3 ways to inject dependencies :- - through constructor - through function parameters - through setters
-
-<details>
-  <summary>code snippet</summary>
 
 ```js
 describe.skip;
@@ -134,7 +128,6 @@ beforeEach(() => {
   const write = createSpyFunction();
 });
 ```
-</details>
 
 - beforeEach is called before each it under the describe
 - before() is called only after entering into the current describe
