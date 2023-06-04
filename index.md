@@ -34,7 +34,7 @@ STEP Classes journalStartDate: 5th June
 
 # Daily Journal
 
-![picture-info](./pictures/dailyJournal.jpeg){:height="10px" width="10px"}
+<img src = "./pictures/dailyJournal.jpeg" width="600" height="600">
 
 <details><summary markdown = "span"></summary>
 
@@ -178,9 +178,9 @@ beforeEach(() => {
   - Levels in a game
   - Configuration of vimrc
   - IOC gives control to the callee from the called function
-````
 
 </details>
 </br>
 
 {::options parse_block_html="false" /}
+````
