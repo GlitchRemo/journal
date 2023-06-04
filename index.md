@@ -62,18 +62,16 @@ evening learnings
 - that's why when we pass process.stdout, it doesn't have a state
 - this is determined on how a method is called
 
--Jayanth's example in this context
-
 <details>
 <summary> code snippet </summary>
-<p>
-```js
-const identity = (x) => x;
-const doSomething = (f) => f(identity);
+  
+  ```js 
+  const identity = (x) => x;
+  const doSomething = (f) => f(identity);
 
-doSomething([1, 2, 3].map);
-```
-</p>
+  doSomething([1, 2, 3].map);
+  ```
+
 </details>
 
 - how is process.stdout.write a bounded fn?
@@ -95,9 +93,8 @@ doSomething([1, 2, 3].map);
   - yesterday we made io, repl and calculator classes
   - today he tested all classes using dependency injection
   - created spy function
-
 <details>
-<summary> code snippet </summary>
+  <summary>code snippet</summary>
 
 ```js
 const createSpyFunction = () => {
@@ -119,7 +116,6 @@ const calc = new Calculator();
 calc.render(renderer);
 assert.ok(renderer.wasCalledOnce(0));
 ```
-
 </details>
 
 - We want to make every unit independently testable
@@ -129,7 +125,7 @@ assert.ok(renderer.wasCalledOnce(0));
 - 3 ways to inject dependencies :- - through constructor - through function parameters - through setters
 
 <details>
-<summary> code snippet </summary>
+  <summary>code snippet</summary>
 
 ```js
 describe.skip;
@@ -138,7 +134,6 @@ beforeEach(() => {
   const write = createSpyFunction();
 });
 ```
-
 </details>
 
 - beforeEach is called before each it under the describe
