@@ -8,7 +8,9 @@ STEP Classes journalStartDate: 5th June
 
 # STEP Classes
 
-![picture-info](./pictures/visionWorkshop.jpeg "classroom")
+<p align="center">
+<img src="./pictures/visionWorkshop.jpeg" "classroom">
+</p>
 
 <details><summary markdown = "span"></summary>
 
@@ -23,7 +25,9 @@ STEP Classes journalStartDate: 5th June
 
 # TODO
 
-![picture-info](./pictures/todo.jpeg "todo")
+<p align="center">
+<img src="./pictures/todo.jpeg" "todo">
+</p>
 
 <details><summary markdown = "span"></summary>
 
@@ -34,7 +38,9 @@ STEP Classes journalStartDate: 5th June
 
 # Daily Journal
 
+<p align="center">
 <img src = "./pictures/dailyJournal.jpeg" width="600" height="600">
+</p>
 
 <details><summary markdown = "span"></summary>
 
