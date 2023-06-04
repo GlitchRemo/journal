@@ -66,8 +66,7 @@ evening learnings
 
 {::options parse_block_html="true" /}
 
-<details>
-<summary> code snippet </summary>
+<details><summary markdown="span"> code snippet </summary>
   
   ```js 
   const identity = (x) => x;
@@ -76,7 +75,6 @@ evening learnings
 doSomething([1, 2, 3].map);
 
 ````
-
 </details>
 {::options parse_block_html="false" /}
 
