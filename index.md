@@ -62,6 +62,10 @@ evening learnings
 - that's why when we pass process.stdout, it doesn't have a state
 - this is determined on how a method is called
 
+- Jayanth's example for the same
+
+{::options parse_block_html="true" /}
+
 <details>
 <summary> code snippet </summary>
   
@@ -69,10 +73,13 @@ evening learnings
   const identity = (x) => x;
   const doSomething = (f) => f(identity);
 
-  doSomething([1, 2, 3].map);
-  ```
+doSomething([1, 2, 3].map);
+
+````
 
 </details>
+{::options parse_block_html="false" /}
+
 - how is process.stdout.write a bounded fn?
 
 - started testing closures
@@ -84,28 +91,28 @@ evening learnings
 
 - started testing reader functions of wc
 
-  - Dheeraj told to identify external dependencies by seeing which part of our logic need external
-    functions and to inject that part from outside
+- Dheeraj told to identify external dependencies by seeing which part of our logic need external
+  functions and to inject that part from outside
 
 - Swamiji's session on IOC
 
-  - yesterday we made io, repl and calculator classes
-  - today he tested all classes using dependency injection
-  - created spy function
+- yesterday we made io, repl and calculator classes
+- today he tested all classes using dependency injection
+- created spy function
 
 ```js
 const createSpyFunction = () => {
-  let callCount = 0;
-  const fn = (...args) => {
-    fn.calls = [...(fn.calls || []), ...args];
-    callCount++;
-  };
-
-  fn.wasCalledOnce = (arg) => callCount === 1 && fn.calls[0] === arg;
-  fn.wasCalledTwice = () => callCount === 2;
-  return fn;
+let callCount = 0;
+const fn = (...args) => {
+  fn.calls = [...(fn.calls || []), ...args];
+  callCount++;
 };
-```
+
+fn.wasCalledOnce = (arg) => callCount === 1 && fn.calls[0] === arg;
+fn.wasCalledTwice = () => callCount === 2;
+return fn;
+};
+````
 
 ```js
 const renderer = createSpyFunction();
