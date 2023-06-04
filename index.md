@@ -63,6 +63,7 @@ evening learnings
 - this is determined on how a method is called
 
 -Jayanth's example in this context
+{::options parse_block_html="true" /}
 
 <details>
 <summary> code snippet </summary>
@@ -75,7 +76,7 @@ doSomething([1, 2, 3].map);
 ```
 
 </details>
-
+{::options parse_block_html="false" /}
 - how is process.stdout.write a bounded fn?
 
 - started testing closures
