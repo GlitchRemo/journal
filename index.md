@@ -9,7 +9,7 @@ STEP Classes journalStartDate: 5th June
 # STEP Classes
 
 <p align="center">
-<img src = "./pictures/visionWorkshop.jpeg" "classroom">
+<img src = "./pictures/visionWorkshop.jpeg">
 </p>
 
 <details><summary markdown = "span"></summary>
@@ -19,14 +19,13 @@ STEP Classes journalStartDate: 5th June
 - asyn file read
 
 </details>
-</br>
 
 ---
 
 # TODO
 
 <p align="center">
-<img src = "./pictures/todo.jpeg" "todo">
+<img src = "./pictures/todo.jpeg">
 </p>
 
 <details><summary markdown = "span"></summary>
@@ -34,7 +33,6 @@ STEP Classes journalStartDate: 5th June
 - wc using classes
 
 </details>
-</br>
 
 # Daily Journal
 
@@ -187,6 +185,5 @@ beforeEach(() => {
   - IOC gives control to the callee from the called function
 
 </details>
-</br>
 
 {::options parse_block_html="false" /}
