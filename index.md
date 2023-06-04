@@ -1,11 +1,14 @@
 ---
 journalStartData: 27th May
 InspiredFrom: Jayanth
+STEP Classes journalStartDate: 5th June
 ---
 
-# TODO
+# STEP Classes
 
-- validate `wc` closures testing idea from ashish
+![picture-info](./image.jpeg)
+
+# TODO
 
 # Contents
 
