@@ -66,14 +66,14 @@ evening learnings
 
 <details>
 <summary> code snippet </summary>
-
+<p>
 ```js
 const identity = (x) => x;
 const doSomething = (f) => f(identity);
 
 doSomething([1, 2, 3].map);
 ```
-
+</p>
 </details>
 
 - how is process.stdout.write a bounded fn?
