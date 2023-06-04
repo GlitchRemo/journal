@@ -4,13 +4,39 @@ InspiredFrom: Jayanth
 STEP Classes journalStartDate: 5th June
 ---
 
+{::options parse_block_html="true" /}
+
 # STEP Classes
 
-![picture-info](./image.jpeg)
+![picture-info](./pictures/visionWorkshop.jpeg "classroom")
+
+<details><summary markdown = "span"></summary>
+
+# Jun 4
+
+- asyn file read
+
+</details>
+</br>
+
+---
 
 # TODO
 
-# Contents
+![picture-info](./pictures/todo.jpeg "todo")
+
+<details><summary markdown = "span"></summary>
+
+- wc using classes
+
+</details>
+</br>
+
+# Daily Journal
+
+![picture-info](./pictures/dailyJournal.jpeg){:height="10px" width="10px"}
+
+<details><summary markdown = "span"></summary>
 
 1. [May 27](#may-27)
 2. [May 28](#may-28)
@@ -66,8 +92,6 @@ evening learnings
 - this is determined on how a method is called
 
 - Jayanth's example for the same
-
-{::options parse_block_html="true" /}
 
 <details><summary markdown="span"> code snippet </summary>
   
@@ -141,7 +165,6 @@ beforeEach(() => {
 });
 ```
 </details>
-{::options parse_block_html="false" /}
 
 - beforeEach is called before each it under the describe
 - before() is called only after entering into the current describe
@@ -156,3 +179,8 @@ beforeEach(() => {
   - Configuration of vimrc
   - IOC gives control to the callee from the called function
 ````
+
+</details>
+</br>
+
+{::options parse_block_html="false" /}
