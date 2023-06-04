@@ -76,7 +76,6 @@ doSomething([1, 2, 3].map);
 
 ````
 </details>
-{::options parse_block_html="false" /}
 
 - how is process.stdout.write a bounded fn?
 
@@ -98,6 +97,8 @@ doSomething([1, 2, 3].map);
 - today he tested all classes using dependency injection
 - created spy function
 
+<details><summary markdown="span"> code snippet </summary>
+
 ```js
 const createSpyFunction = () => {
 let callCount = 0;
@@ -110,7 +111,7 @@ fn.wasCalledOnce = (arg) => callCount === 1 && fn.calls[0] === arg;
 fn.wasCalledTwice = () => callCount === 2;
 return fn;
 };
-````
+```
 
 ```js
 const renderer = createSpyFunction();
@@ -118,12 +119,16 @@ const calc = new Calculator();
 calc.render(renderer);
 assert.ok(renderer.wasCalledOnce(0));
 ```
+</details>
+
 
 - We want to make every unit independently testable
 - That's why we mock external dependencies and inject to the tested functions
 - Especially the asynchronous functions we want to mock
 - eg. setInterval, clearInterval, process.stdin, process.stdout, fs, stdin.\_readable.stopped = true
 - 3 ways to inject dependencies :- - through constructor - through function parameters - through setters
+
+<details><summary markdown="span"> code snippet </summary>
 
 ```js
 describe.skip;
@@ -132,6 +137,8 @@ beforeEach(() => {
   const write = createSpyFunction();
 });
 ```
+</details>
+{::options parse_block_html="false" /}
 
 - beforeEach is called before each it under the describe
 - before() is called only after entering into the current describe
@@ -145,3 +152,4 @@ beforeEach(() => {
   - Levels in a game
   - Configuration of vimrc
   - IOC gives control to the callee from the called function
+````
