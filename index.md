@@ -62,17 +62,15 @@ evening learnings
 - that's why when we pass process.stdout, it doesn't have a state
 - this is determined on how a method is called
 
--Jayanth's example in this context
-
 <details>
 <summary> code snippet </summary>
+  
+  ```js 
+  const identity = (x) => x;
+  const doSomething = (f) => f(identity);
 
-```js
-const identity = (x) => x;
-const doSomething = (f) => f(identity);
-
-doSomething([1, 2, 3].map);
-```
+  doSomething([1, 2, 3].map);
+  ```
 
 </details>
 - how is process.stdout.write a bounded fn?
@@ -95,9 +93,6 @@ doSomething([1, 2, 3].map);
   - today he tested all classes using dependency injection
   - created spy function
 
-<details>
-<summary> code snippet </summary>
-
 ```js
 const createSpyFunction = () => {
   let callCount = 0;
@@ -119,16 +114,11 @@ calc.render(renderer);
 assert.ok(renderer.wasCalledOnce(0));
 ```
 
-</details>
-
 - We want to make every unit independently testable
 - That's why we mock external dependencies and inject to the tested functions
 - Especially the asynchronous functions we want to mock
 - eg. setInterval, clearInterval, process.stdin, process.stdout, fs, stdin.\_readable.stopped = true
 - 3 ways to inject dependencies :- - through constructor - through function parameters - through setters
-
-<details>
-<summary> code snippet </summary>
 
 ```js
 describe.skip;
@@ -137,8 +127,6 @@ beforeEach(() => {
   const write = createSpyFunction();
 });
 ```
-
-</details>
 
 - beforeEach is called before each it under the describe
 - before() is called only after entering into the current describe
