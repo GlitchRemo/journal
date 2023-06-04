@@ -9,7 +9,7 @@ STEP Classes journalStartDate: 5th June
 # STEP Classes
 
 <p align="center">
-<img src="./pictures/visionWorkshop.jpeg" "classroom">
+<img src = "./pictures/visionWorkshop.jpeg" "classroom">
 </p>
 
 <details><summary markdown = "span"></summary>
@@ -26,7 +26,7 @@ STEP Classes journalStartDate: 5th June
 # TODO
 
 <p align="center">
-<img src="./pictures/todo.jpeg" "todo">
+<img src = "./pictures/todo.jpeg" "todo">
 </p>
 
 <details><summary markdown = "span"></summary>
@@ -144,7 +144,7 @@ fn.wasCalledOnce = (arg) => callCount === 1 && fn.calls[0] === arg;
 fn.wasCalledTwice = () => callCount === 2;
 return fn;
 };
-```
+````
 
 ```js
 const renderer = createSpyFunction();
@@ -152,8 +152,8 @@ const calc = new Calculator();
 calc.render(renderer);
 assert.ok(renderer.wasCalledOnce(0));
 ```
-</details>
 
+</details>
 
 - We want to make every unit independently testable
 - That's why we mock external dependencies and inject to the tested functions
@@ -170,6 +170,7 @@ beforeEach(() => {
   const write = createSpyFunction();
 });
 ```
+
 </details>
 
 - beforeEach is called before each it under the describe
@@ -189,4 +190,3 @@ beforeEach(() => {
 </br>
 
 {::options parse_block_html="false" /}
-````
