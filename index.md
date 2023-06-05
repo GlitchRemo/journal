@@ -2,43 +2,41 @@
 journalStartData: 27th May
 InspiredFrom: Jayanth
 STEP Classes journalStartDate: 5th June
+Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Technological Playlist
 ---
 
 {::options parse_block_html="true" /}
 
-# STEP Classes
-
-<p align="center">
-<img src = "./pictures/visionWorkshop.jpeg">
-</p>
+# TODO
 
 <details><summary markdown = "span"></summary>
 
-# Jun 4
-
-- asyn file read
+- [x] StdinReader class
+- [x] process.stdin.on(eventName, callback)
+- [x] stdin.\_readableStream.ended
+- [x] eventEmitter class
+- [ ] createReadableStream class
+- [ ] addListener
 
 </details>
 
 ---
 
-# TODO
-
-<p align="center">
-<img src = "./pictures/todo.jpeg">
-</p>
+# STEP Classes
 
 <details><summary markdown = "span"></summary>
 
-- wc using classes
+# Jun 5
+
+- StdinReader
+- EventEmitter
+- fs.createReadStream
 
 </details>
 
-# Daily Journal
+---
 
-<p align="center">
-<img src = "./pictures/dailyJournal.jpeg" width="600" height="600">
-</p>
+# Daily Journal
 
 <details><summary markdown = "span"></summary>
 
@@ -47,8 +45,61 @@ STEP Classes journalStartDate: 5th June
 3. [May 30](#may-30)
 4. [Jun 1](#jun-1)
 5. [Jun 2](#jun-2)
+6. [Jun 5](#jun-5)
+
+# Jun 5
+
+<details><summary markdown = "span"></summary>
+- Games demo by seniors
+
+1. Scottland Yard
+
+   - Praful's map design
+   - Real-time game feelings
+   - cool cards
+
+2. Cashflow
+
+   - Money Management
+   - Multiple rules
+   - Multiple paths
+
+3. Cludo
+
+   - Cool UI
+   - Multiple decisions
+   - Handled data security
+
+4. Acquire
+   - Save and restore feature
+   - Long flowcharts
+   - Planning in flow charts in iteration 0
+   - Working with 56 files
+   - Proper documentation, guidelines and 100% test coverage
+   - Started with first cut and implemented features afterwards
+   - Simple and sophisticated login page
+   - Join through link shared by host
+
+- Common Takeaways
+  - Thinking of a large picture
+  - Write top level idea
+  - Talk in top level while doing demo
+  - Every game has a
+    1. login page
+    2. lobby
+    3. log
+    4. players details
+    5. database
+    6. some private area
+    7. host
+
+</details>
+
+---
 
 # Jun 2
+
+<details><summary markdown = "span"></summary>
 
 - Tags in md
   - heading and summary tag
@@ -60,14 +111,22 @@ STEP Classes journalStartDate: 5th June
 - Further we can link other pages in entry page
 - Started developing interests in Creative coding.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
 - Got a MIT playlist on Deep Learning.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
+</details>
+
+---
 
 # Jun 1
+
+<details><summary markdown = "span"></summary>
 
 - Installed and created first file in Obsidian
 - Inspired by Nitin
 - Write purpose of a task before starting it
+</details>
 
 # May 30
+
+<details><summary markdown = "span"></summary>
 
 - Ppt by Lakshmi and Subhash
 - Account name:- Atlassian
@@ -77,8 +136,13 @@ STEP Classes journalStartDate: 5th June
   - Nitin -> Yaska
 - Nitin followed Getting Things Done during his project for tracking his todos
 - Tracking every learning, note things while learning
+</details>
+
+---
 
 # May 28
+
+<details><summary markdown = "span"></summary>
 
 morning learnings
 
@@ -112,15 +176,17 @@ doSomething([1, 2, 3].map);
 
 - started testing closures
 - got a way to test closures of `wc()`. Have to verify from ashish
+</details>
 
 ---
 
 # May 27
+<details><summary markdown = "span"></summary>
 
 - started testing reader functions of wc
 
 - Dheeraj told to identify external dependencies by seeing which part of our logic need external
-  functions and to inject that part from outside
+functions and to inject that part from outside
 
 - Swamiji's session on IOC
 
@@ -134,8 +200,8 @@ doSomething([1, 2, 3].map);
 const createSpyFunction = () => {
 let callCount = 0;
 const fn = (...args) => {
-  fn.calls = [...(fn.calls || []), ...args];
-  callCount++;
+fn.calls = [...(fn.calls || []), ...args];
+callCount++;
 };
 
 fn.wasCalledOnce = (arg) => callCount === 1 && fn.calls[0] === arg;
@@ -185,5 +251,12 @@ beforeEach(() => {
   - IOC gives control to the callee from the called function
 
 </details>
+</details>
 
+---
+
+# Presentation Takeaways
+
+<details><summary markdown = "span"></summary>
+</details>
 {::options parse_block_html="false" /}
