@@ -124,6 +124,8 @@ Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Techno
 - Write purpose of a task before starting it
 </details>
 
+---
+
 # May 30
 
 <details><summary markdown = "span"></summary>
