@@ -9,8 +9,6 @@ Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Techno
 
 # TODO
 
-<details><summary markdown = "span"></summary>
-
 - [x] StdinReader class
 - [x] process.stdin.on(eventName, callback)
 - [x] stdin.\_readableStream.ended
@@ -18,27 +16,29 @@ Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Techno
 - [ ] createReadableStream class
 - [ ] addListener
 
-</details>
-
 ---
 
 # STEP Classes
 
-<details><summary markdown = "span"></summary>
-
 # Jun 5
 
+- Define events
+- A feature of node
+- Event is an concept used to seperate work of two different persons from each other
+- There are events and event listeners, we register listeners to listen to a particular event
 - StdinReader
 - EventEmitter
 - fs.createReadStream
-
-</details>
+- Example Shown:
+  1. StdinReader class
+  2. Timer class
+  3. Finding number of vowels in each line using Set class
 
 ---
 
 # Daily Journal
 
-<details><summary markdown = "span"></summary>
+<details><summary markdown = "span">contents</summary>
 
 1. [May 27](#may-27)
 2. [May 28](#may-28)
@@ -47,9 +47,10 @@ Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Techno
 5. [Jun 2](#jun-2)
 6. [Jun 5](#jun-5)
 
+</details>
+
 # Jun 5
 
-<details><summary markdown = "span"></summary>
 - Games demo by seniors
 
 1. Scottland Yard
@@ -93,13 +94,9 @@ Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Techno
     6. some private area
     7. host
 
-</details>
-
 ---
 
 # Jun 2
-
-<details><summary markdown = "span"></summary>
 
 - Tags in md
   - heading and summary tag
@@ -111,40 +108,25 @@ Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Techno
 - Further we can link other pages in entry page
 - Started developing interests in Creative coding.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
 - Got a MIT playlist on Deep Learning.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
-</details>
 
 ---
 
 # Jun 1
 
-<details><summary markdown = "span"></summary>
-
 - Installed and created first file in Obsidian
 - Inspired by Nitin
 - Write purpose of a task before starting it
-</details>
 
 ---
 
 # May 30
 
-<details><summary markdown = "span"></summary>
-
-- Ppt by Lakshmi and Subhash
-- Account name:- Atlassian
-- Ppt by Nitin and Manikantha
-- Account Name:- E4R
-- Project of ...
-  - Nitin -> Yaska
 - Nitin followed Getting Things Done during his project for tracking his todos
 - Tracking every learning, note things while learning
-</details>
 
 ---
 
 # May 28
-
-<details><summary markdown = "span"></summary>
 
 morning learnings
 
@@ -168,27 +150,23 @@ evening learnings
   ```js 
   const identity = (x) => x;
   const doSomething = (f) => f(identity);
-
-doSomething([1, 2, 3].map);
-
-````
+  doSomething([1, 2, 3].map);
+```
 </details>
 
 - how is process.stdout.write a bounded fn?
 
 - started testing closures
 - got a way to test closures of `wc()`. Have to verify from ashish
-</details>
 
 ---
 
 # May 27
-<details><summary markdown = "span"></summary>
 
 - started testing reader functions of wc
 
 - Dheeraj told to identify external dependencies by seeing which part of our logic need external
-functions and to inject that part from outside
+  functions and to inject that part from outside
 
 - Swamiji's session on IOC
 
@@ -200,17 +178,17 @@ functions and to inject that part from outside
 
 ```js
 const createSpyFunction = () => {
-let callCount = 0;
-const fn = (...args) => {
-fn.calls = [...(fn.calls || []), ...args];
-callCount++;
-};
+  let callCount = 0;
+  const fn = (...args) => {
+    fn.calls = [...(fn.calls || []), ...args];
+    callCount++;
+  };
 
-fn.wasCalledOnce = (arg) => callCount === 1 && fn.calls[0] === arg;
-fn.wasCalledTwice = () => callCount === 2;
-return fn;
+  fn.wasCalledOnce = (arg) => callCount === 1 && fn.calls[0] === arg;
+  fn.wasCalledTwice = () => callCount === 2;
+  return fn;
 };
-````
+```
 
 ```js
 const renderer = createSpyFunction();
@@ -253,12 +231,17 @@ beforeEach(() => {
   - IOC gives control to the callee from the called function
 
 </details>
-</details>
 
 ---
 
 # Presentation Takeaways
 
-<details><summary markdown = "span"></summary>
-</details>
+> `Presentors: Lakshmi and Subhash`
+
+- Account name:- Atlassian
+- Ppt by Nitin and Manikantha
+- Account Name:- E4R
+- Project of ...
+  - Nitin -> Yaska
+
 {::options parse_block_html="false" /}
