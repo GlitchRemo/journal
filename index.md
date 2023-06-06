@@ -9,12 +9,46 @@ Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Techno
 
 # TODO
 
-- [x] StdinReader class
-- [x] process.stdin.on(eventName, callback)
-- [x] stdin.\_readableStream.ended
-- [x] eventEmitter class
-- [ ] createReadableStream class
 - [ ] addListener
+- [ ] Tic-tac-toe
+- [ ] Save the goat
+- [ ] process.stdout methods
+
+  1. setRawMode
+
+  ```js
+  process.stdin.setEncoding("utf8");
+  const fn = (data) => {
+    if (data === "e") {
+      process.stdin.destroy();
+      return;
+    }
+    process.stdout.write(data);
+  };
+
+  process.stdin.setRawMode(true);
+  process.stdin.on("data", fn);
+  ```
+
+  2.  cursorTo
+  3.  windowSize
+  4.  clearScreenDown
+
+  ```js
+  process.stdout.clearScreenDown();
+  console.log(process.stdout.getWindowSize());
+  process.stdout.write("a");
+  process.stdout.cursorTo(118, 16, () => {});
+  process.stdout.write("a");
+  process.stdout.cursorTo(18, 10, () => {});
+  process.stdout.write("a");
+  process.stdout.cursorTo(118, 16, () => {});
+  process.stdout.write("\n");
+  ```
+
+  4.  TTY
+
+- [ ] child-process -> exec -> asplay
 
 ---
 
@@ -146,12 +180,13 @@ evening learnings
 - Jayanth's example for the same
 
 <details><summary markdown="span"> code snippet </summary>
-  
-  ```js 
-  const identity = (x) => x;
-  const doSomething = (f) => f(identity);
-  doSomething([1, 2, 3].map);
+
+```js
+const identity = (x) => x;
+const doSomething = (f) => f(identity);
+doSomething([1, 2, 3].map);
 ```
+
 </details>
 
 - how is process.stdout.write a bounded fn?
