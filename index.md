@@ -12,47 +12,68 @@ Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Techno
 - [ ] addListener
 - [ ] Tic-tac-toe
 - [ ] Save the goat
-- [ ] process.stdout methods
-
-  1. setRawMode
-
-  ```js
-  process.stdin.setEncoding("utf8");
-  const fn = (data) => {
-    if (data === "e") {
-      process.stdin.destroy();
-      return;
-    }
-    process.stdout.write(data);
-  };
-
-  process.stdin.setRawMode(true);
-  process.stdin.on("data", fn);
-  ```
-
-  2.  cursorTo
-  3.  windowSize
-  4.  clearScreenDown
-
-  ```js
-  process.stdout.clearScreenDown();
-  console.log(process.stdout.getWindowSize());
-  process.stdout.write("a");
-  process.stdout.cursorTo(118, 16, () => {});
-  process.stdout.write("a");
-  process.stdout.cursorTo(18, 10, () => {});
-  process.stdout.write("a");
-  process.stdout.cursorTo(118, 16, () => {});
-  process.stdout.write("\n");
-  ```
-
-  4.  TTY
-
 - [ ] child-process -> exec -> asplay
 
 ---
 
 # STEP Classes
+
+# Jun 7
+
+> ### process.stdout methods
+
+1. setRawMode
+
+```js
+process.stdin.setEncoding("utf8");
+const fn = (data) => {
+  if (data === "e") {
+    process.stdin.destroy();
+    return;
+  }
+  process.stdout.write(data);
+};
+
+process.stdin.setRawMode(true);
+process.stdin.on("data", fn);
+process.stdin.setRawMode(false);
+```
+
+2.  cursorTo
+3.  windowSize
+4.  clearScreenDown
+
+```js
+process.stdout.clearScreenDown();
+console.log(process.stdout.getWindowSize());
+process.stdout.write("a");
+process.stdout.cursorTo(118, 16, () => {});
+process.stdout.write("a");
+process.stdout.cursorTo(18, 10, () => {});
+process.stdout.write("a");
+process.stdout.cursorTo(118, 16, () => {});
+process.stdout.write("\n");
+```
+
+4.  TTY
+
+> ### packages
+
+- npm init, start, install
+- a package can consume a package
+- we can make a package by `npm init` and specifying an entry point in `main` key of package.json file that is created during `npm init`
+  - eg. "main": "index.js"
+- to use any package, `npm init` in current directory or create a package.json manually
+- add a command `start: node main.js` key in `script` of package.json
+- specify test command as `node --test`
+- install required package by `npm --save install pathOfPackageDir`
+  - this will add `dependencies` to `package.json`, if not present will create one and then add
+- install sees the package.json `dependencies` and copy that package into our local in `node-modules` dir
+- `node help` to see all commands
+- we can write commands in `scripts` and run using `node run <command>`
+- while pushing into remote repo add `node-modules` into .gitignore
+- npmjs.org is a official website for publishing and installing packages
+- colors and table are useful packages
 
 # Jun 5
 
