@@ -20,6 +20,67 @@ Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Techno
 
 # Jun 7
 
+> ### Games day
+
+1. Planning starts with Balloon Shooter
+
+- Appear balloon randomly within particular sections of screen
+- A shooter will shoot one bullet at a time
+- If a bullet touch any balloon, the balloon will disappear and score increase
+- If a balloon touch upper wall, the balloon will blast and one life will decrease
+- ## Games Components
+  1. Shooter
+  2. Screen
+  3. Bullet
+  4. Balloon
+  5. Scoreboard
+- Plan ->
+  - Setup screen
+  - Show screen
+  - Start game after 3 sec timeout
+  - Start appearing balloons
+  - Take input from user
+  - Move shooter or Fire shooter
+  - Update score
+  - Loop
+- ### Components of each class
+- Shooter
+  1. Bullet
+  1. Fire
+  1. Shoot
+- Screen
+  1. Shooter
+  2. Balloons
+- Balloon
+  1. Appear
+  2. Blast
+- Bullet
+  1. Shape
+  2. Position
+
+### Swamiji showed:-
+
+1. Buffer class
+
+- const b = Buffer.alloc(10)
+- const c = Buffer.alloc(20)
+- b.copy(c);
+- b.write(c);
+- b.write("abcd");
+- b.write([1, 2, 3]);
+- b.readInt8(1);
+  Buffers are useful for optimization. We dont need to write every time to the screen. Instead we can create and edit a buffer according to our need and paste the whole buffer at last. With methods like `readInt8` and `readInt32BE` we can show the buffer as we want to show it. Its like editing in a grid and then display the whole grid.
+
+- const a = new Buffer("abcd");
+  - The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+- a.toString();
+
+2. Read raw input from stdin
+3. Write to screen
+4. Erase a particular object
+
+# Jun 6
+
 > ### process.stdout methods
 
 1. setRawMode
@@ -36,7 +97,6 @@ const fn = (data) => {
 
 process.stdin.setRawMode(true);
 process.stdin.on("data", fn);
-process.stdin.setRawMode(false);
 ```
 
 2.  cursorTo
@@ -299,5 +359,17 @@ beforeEach(() => {
 - Account Name:- E4R
 - Project of ...
   - Nitin -> Yaska
+
+> `Presentor: Sakshi`
+
+- Account Name: tdm growth partners
+- Project Name: Turbo Portal and Turbo Client Portal
+- To solve problems related to maintaing scaled data in Excel Sheet
+- MFA - Multifactored Authorization
+- Interesting Tech Stack
+  1. Jira
+  2. Confluence
+  3. Twillo
+  4.
 
 {::options parse_block_html="false" /}
