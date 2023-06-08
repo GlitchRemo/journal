@@ -3,6 +3,7 @@ journalStartData: 27th May
 InspiredFrom: Jayanth
 STEP Classes journalStartDate: 5th June
 Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Technological Playlist
+Suggestions: add line break after 119
 ---
 
 {::options parse_block_html="true" /}
@@ -17,6 +18,26 @@ Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Techno
 ---
 
 # STEP Classes
+
+# Jun 8
+
+- Jayanth's perspective of game modelling
+
+  - Entities
+    1. Model
+    2. Controller
+    3. View
+  - Controller should take input from input source, give it to model, and sync changes of model with view
+  - Every entities should be independent of each other
+  - No entities should know about any other entity other than controller
+
+- Started bulding dino game with bittu
+- Things I appreciates of Bittu:
+  - Free style of problem solving
+  - Think very small, implement it with most simple logic
+  - Do not think of structuring, write code in main
+  - Started with moving things
+  - This will give speed and can try different thing in very minimum time
 
 # Jun 7
 
@@ -355,10 +376,16 @@ beforeEach(() => {
 > `Presentors: Lakshmi and Subhash`
 
 - Account name:- Atlassian
-- Ppt by Nitin and Manikantha
+- Project Name: Provisioning Life Cycle
+
+> `Presentors: Nitin and Manikantha`
+
 - Account Name:- E4R
-- Project of ...
+- Project of
   - Nitin -> Yaska
+- Strategies used by Nitin
+  - Ask WHY?
+  - Getting Things Done
 
 > `Presentor: Sakshi`
 
@@ -370,6 +397,56 @@ beforeEach(() => {
   1. Jira
   2. Confluence
   3. Twillo
-  4.
+
+> `Presentors: Chhavi, Ankamma, Azhar, Praful`
+
+- Account: UBS Bank
+- Track your work
+- Build a habit
+
+> `Presentor: Prajakta`
+
+- Account Name: MCIP
+- Project Name: Metro
+- MCIP- Metro Customer Individual Pricing
+- BFF - Backend For Frontend
+- Have depth and breadth of knowledge
+- Try different approaches
+- Learn the way you want to explain to others
+
+> `Presentor: Ritika`
+
+- Account Name: Mckinsay
+- Project Name: Engaging
+- Tech Stack:
+  - Docker
+  - System Design
+- Maintained card for test cases
+- increased from 32% -> 72% test converage
+
+> `Presentors: Swapnil, Nilam, Vivek, Tanmay`
+
+- Account Name: Mercedes Benz
+- Project Name:
+  - Swapnil: Product and Merchandise Data(PMD)
+  - Nilam, Vivek, Tanmay: One Touch Retail(OTR)
+- used nice jargans
+- Appreciate qualities of people which you like to possess
+- SonarQube for test coverage checking
+- Opportunity to observe things
+- became billable
+
+> `Presentors: Sampriti, Abin, Dileep, Sanjana`
+
+- Account Name: Axis Bank
+- Project Name: MLP(Maximus Lending Platform)
+- Steal Ideas
+- Maintain notes
+- Take ownership
+- Build trust
+- Self reflection
+- Projecting capabilities
+- Teach others
+- Give feedback
 
 {::options parse_block_html="false" /}
