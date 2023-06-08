@@ -10,9 +10,10 @@ Suggestions: add line break after 119
 
 # TODO
 
-- [ ] addListener
 - [ ] Tic-tac-toe
 - [ ] Save the goat
+- [ ] Dino Game
+- [ ] Balloon Shooter
 - [ ] child-process -> exec -> asplay
 
 ---
@@ -104,7 +105,8 @@ Suggestions: add line break after 119
 
 > ### process.stdout methods
 
-1. setRawMode
+1.  TTY
+1.  setRawMode
 
 ```js
 process.stdin.setEncoding("utf8");
@@ -135,8 +137,6 @@ process.stdout.write("a");
 process.stdout.cursorTo(118, 16, () => {});
 process.stdout.write("\n");
 ```
-
-4.  TTY
 
 > ### packages
 
