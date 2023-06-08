@@ -315,8 +315,6 @@ beforeEach(() => {
   - Configuration of vimrc
   - IOC gives control to the callee from the called function
 
-</details>
-
 ---
 
 # Step-8 Games Takeaways
