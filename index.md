@@ -20,16 +20,19 @@ Suggestions: add line break after 119
 
 # STEP Classes
 
-<details><summary>Contents</summary>
-  1. [May 27](#may-27)
-  2. [May 28](#may-28)
-  3. [May 30](#may-30)
-  4. [Jun 1](#jun-1)
-  5. [Jun 2](#jun-2)
-  6. [Jun 5](#jun-5)
-  7. [Jun 6](#jun-6)
-  8. [Jun 7](#jun-7)
-  9. [Jun 8](#jun-8)
+<details><summary markdown = "span">contents</summary>
+
+1. [May 27](#may-27)
+2. [May 28](#may-28)
+3. [May 30](#may-30)
+4. [Jun 1](#jun-1)
+5. [Jun 2](#jun-2)
+6. [Jun 5](#jun-5)
+7. [Jun 6](#jun-6)
+8. [Jun 7](#jun-7)
+9. [Jun 8](#jun-8)
+
+</details>
 
 # Jun 8
 
@@ -181,68 +184,6 @@ process.stdout.write("\n");
   2. Timer class
   3. Finding number of vowels in each line using Set class
 
----
-
-# Daily Journal
-
-<details><summary markdown = "span">contents</summary>
-
-1. [May 27](#may-27)
-2. [May 28](#may-28)
-3. [May 30](#may-30)
-4. [Jun 1](#jun-1)
-5. [Jun 2](#jun-2)
-6. [Jun 5](#jun-5)
-
-</details>
-
-# Jun 5
-
-- Games demo by seniors
-
-1. Scottland Yard
-
-   - Praful's map design
-   - Real-time game feelings
-   - cool cards
-
-2. Cashflow
-
-   - Money Management
-   - Multiple rules
-   - Multiple paths
-
-3. Cludo
-
-   - Cool UI
-   - Multiple decisions
-   - Handled data security
-
-4. Acquire
-   - Save and restore feature
-   - Long flowcharts
-   - Planning in flow charts in iteration 0
-   - Working with 56 files
-   - Proper documentation, guidelines and 100% test coverage
-   - Started with first cut and implemented features afterwards
-   - Simple and sophisticated login page
-   - Join through link shared by host
-
-- Common Takeaways
-  - Thinking of a large picture
-  - Write top level idea
-  - Talk in top level while doing demo
-  - Every game has a
-    1. login page
-    2. lobby
-    3. log
-    4. players details
-    5. database
-    6. some private area
-    7. host
-
----
-
 # Jun 2
 
 - Tags in md
@@ -253,10 +194,6 @@ process.stdout.write("\n");
     - README.md
     - index.html
 - Further we can link other pages in entry page
-- Started developing interests in Creative coding.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
-- Got a MIT playlist on Deep Learning.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
-
----
 
 # Jun 1
 
@@ -382,6 +319,53 @@ beforeEach(() => {
 
 ---
 
+# Step-8 Games Takeaways
+
+- Games demo by seniors
+
+1. Scottland Yard
+
+   - Praful's map design
+   - Real-time game feelings
+   - cool cards
+
+2. Cashflow
+
+   - Money Management
+   - Multiple rules
+   - Multiple paths
+
+3. Cludo
+
+   - Cool UI
+   - Multiple decisions
+   - Handled data security
+
+4. Acquire
+   - Save and restore feature
+   - Long flowcharts
+   - Planning in flow charts in iteration 0
+   - Working with 56 files
+   - Proper documentation, guidelines and 100% test coverage
+   - Started with first cut and implemented features afterwards
+   - Simple and sophisticated login page
+   - Join through link shared by host
+
+- Common Takeaways
+  - Thinking of a large picture
+  - Write top level idea
+  - Talk in top level while doing demo
+  - Every game has a
+    1. login page
+    2. lobby
+    3. log
+    4. players details
+    5. database
+    6. some private area
+    7. host
+
+---
+
 # Presentation Takeaways
 
 > `Presentors: Lakshmi and Subhash`
@@ -459,5 +443,14 @@ beforeEach(() => {
 - Projecting capabilities
 - Teach others
 - Give feedback
+
+---
+
+# My Tech Interests Area
+
+- Started developing interests in Creative coding.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
+- Got a MIT playlist on Deep Learning.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
+
+---
 
 {::options parse_block_html="false" /}
