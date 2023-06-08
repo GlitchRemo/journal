@@ -20,6 +20,17 @@ Suggestions: add line break after 119
 
 # STEP Classes
 
+<details><summary>Contents</summary>
+  1. [May 27](#may-27)
+  2. [May 28](#may-28)
+  3. [May 30](#may-30)
+  4. [Jun 1](#jun-1)
+  5. [Jun 2](#jun-2)
+  6. [Jun 5](#jun-5)
+  7. [Jun 6](#jun-6)
+  8. [Jun 7](#jun-7)
+  9. [Jun 8](#jun-8)
+
 # Jun 8
 
 - Jayanth's perspective of game modelling
