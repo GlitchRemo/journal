@@ -1,20 +1,18 @@
 ---
 journalStartData: 27th May
 InspiredFrom: Jayanth
-STEP Classes journalStartDate: 5th June
-Upcoming sections: Presentation Takeaways, Music playlist, Marvel Movies, Technological Playlist
-Suggestions: add line break after 119
+Upcoming sections: Music playlist, Marvel Movies
+Suggestions: Build common keywords links for easy access, start todo with a verb
 ---
 
 {::options parse_block_html="true" /}
 
 # TODO
 
-- [ ] Tic-tac-toe
-- [ ] Save the goat
-- [ ] Dino Game
-- [ ] Balloon Shooter
-- [ ] child-process -> exec -> asplay
+- [ ] Implement tic-tac-toe with game and controller class
+- [ ] Take input in save the goat
+- [ ] Jump the dino
+- [ ] Appear balloon in Balloon Shooter
 
 ---
 
@@ -22,17 +20,53 @@ Suggestions: add line break after 119
 
 <details><summary markdown = "span">contents</summary>
 
-1. [May 27](#may-27)
-2. [May 28](#may-28)
-3. [May 30](#may-30)
-4. [Jun 1](#jun-1)
+1. [Jun 8](#jun-8)
+2. [Jun 7](#jun-7)
+3. [Jun 6](#jun-6)
+4. [Jun 5](#jun-5)
 5. [Jun 2](#jun-2)
-6. [Jun 5](#jun-5)
-7. [Jun 6](#jun-6)
-8. [Jun 7](#jun-7)
-9. [Jun 8](#jun-8)
+6. [Jun 1](#jun-1)
+7. [May 30](#may-30)
+8. [May 28](#may-28)
+9. [May 27](#may-27)
 
 </details>
+
+# Jun 9
+
+- Inheritance
+
+  - We can inherit properties of a class
+  - ```js
+    class Derived extends Base {
+      constructor() {
+        super(); // reference to Base class
+      }
+    }
+    ```
+  - super should be the first thing to call inside a derived class constructor
+  - it internally calls the Base class constructor with the argument the constructor need
+  - using super keyword we can access the public fields of Base class
+  - there is a `is a` relationship between Base class and Derived class
+  - for example
+
+  ```js
+  class TimedCounter extends EventEmitter
+  ```
+
+- TimedCounter `is a` EventEmitter
+- Object class is the parent of all instances in javascript
+- Object class has a toString()
+
+  - as every variable is an instance of a prototype, thats why every instance has a toString() method
+
+- Inject process.stdout as an dependency as writer
+- Inject color/styler as dependency
+
+- Ask relevant questions to relevant class
+- Modularize `controller` further as `game` and `controller`
+- `controller` will interact with user and game
+- `game` contains all gaming logic
 
 # Jun 8
 
