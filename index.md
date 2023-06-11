@@ -9,6 +9,7 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
 
 # TODO
 
+- [ ] Take feedback on Jun 9 notes on Inheritance
 - [ ] Implement tic-tac-toe with game and controller class
 - [ ] Take input in save the goat
 - [ ] Jump the dino
@@ -18,25 +19,122 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
 
 # STEP Classes
 
-<details><summary markdown = "span">contents</summary>
+<details><summary markdown = "span">topics covered</summary>
 
-1. [Jun 8](#jun-8)
-2. [Jun 7](#jun-7)
-3. [Jun 6](#jun-6)
-4. [Jun 5](#jun-5)
-5. [Jun 2](#jun-2)
-6. [Jun 1](#jun-1)
-7. [May 30](#may-30)
-8. [May 28](#may-28)
-9. [May 27](#may-27)
+1. [mock fn](#mock-function)
+1. [stub fn](#stub-function)
 
 </details>
+
+<details><summary markdown = "span">datewise log</summary>
+
+1. [Jun 10](#jun-10)
+1. [Jun 9](#jun-9)
+1. [Jun 8](#jun-8)
+1. [Jun 7](#jun-7)
+1. [Jun 6](#jun-6)
+1. [Jun 5](#jun-5)
+1. [Jun 2](#jun-2)
+1. [Jun 1](#jun-1)
+1. [May 30](#may-30)
+1. [May 28](#may-28)
+1. [May 27](#may-27)
+
+</details>
+
+---
+
+# Jun 10
+
+- Mocking using `it` predefined
+- For asynchronous function testing, `it` callback accept a `done` function
+- `done` promises that asserts will be executed only when it `done` is executed
+- Problem arises with testing set Interval callback
+
+```js
+const timedCounterListener = (count) => {
+  if (count === 2) {
+    tc.pause();
+    done();
+    assert.strictEqual(count, 2); // this assert will not be executed before the above statement is executed
+  }
+};
+```
+
+- for that write `it` as
+
+```js
+it("testName", (context, done) => {
+  // body of callback
+});
+```
+
+- ### use of context
+
+> ### Code
+
+```js
+resume() {
+  this.#intervalId = this.#scheduler.schedule(() => {
+    this.emit("tick", this.#timesTicked);
+    this.#timesTicked++;
+  }, this.#interval * 1000);
+}
+```
+
+> ### Test
+
+```js
+it("should count two time", (context) => {
+  const schedule = context.mock.fn((callback, delay) => {
+    callback();
+    callback();
+    assert.deepEqual(delay, 1000);
+  });
+  const unschedule = context.mock.fn();
+  const scheduler = { schedule, unschedule };
+  const spyListener = context.mock.fn();
+  const tc = new TimedCounter(1, scheduler);
+
+  tc.on("tick", spyListener);
+  tc.resume();
+
+  assert.deepEqual(spyListener.mock.callCount(), 2);
+  assert.deepEqual(spyListener.mock.calls[0].arguments[0], 1);
+  assert.deepEqual(spyListener.mock.calls[1].arguments[0], 2);
+});
+```
+
+### Stub Function
+
+- here schedule is a stub function
+- A stub acts as a small piece of code that replaces another component during testing
+
+### Mock Function
+
+- here unschedule is a mock function
+- Mock functions allow you to test the links between code by erasing the actual implementation of a function, capturing calls to the function (and the parameters passed in those calls), capturing instances of constructor functions when instantiated with new , and allowing test-time configuration of return values.
+
+- `eventEmitter.on()` -> registers an event
+- `eventEmitter.emit()` -> emits/executes/run an event
+- `setInterval(() =>eventEmitter.emit(), 100)` -> schedule an event, emits an event in suitable time
+- Event scheduling is the activity of finding a suitable time for an event
+
+### MVC architecture
+
+[click here](https://developer.mozilla.org/en-US/docs/Glossary/MVC)
+
+<img src="https://developer.mozilla.org/en-US/docs/Glossary/MVC/model-view-controller-light-blue.png" alt="MVC architecture" style="height: 500px; width:800px;"/>
+
+- expalined with Tic-Tac-Toe Game by Jayanth
+
+[tic-tac-toe](./tic-tac-toe/)
 
 # Jun 9
 
 - Inheritance
 
-  - We can inherit properties of a class
+  - We can inherit properties and behaviours of a class
   - ```js
     class Derived extends Base {
       constructor() {
@@ -54,11 +152,15 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
   class TimedCounter extends EventEmitter
   ```
 
+````
+
 - TimedCounter `is a` EventEmitter
-- Object class is the parent of all instances in javascript
+- Every type in javascript is an Object
 - Object class has a toString()
 
   - as every variable is an instance of a prototype, thats why every instance has a toString() method
+
+> Other Learnings
 
 - Inject process.stdout as an dependency as writer
 - Inject color/styler as dependency
@@ -486,3 +588,4 @@ beforeEach(() => {
 ---
 
 {::options parse_block_html="false" /}
+````
