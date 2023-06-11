@@ -23,6 +23,7 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
 
 1. [mock fn](#mock-function)
 1. [stub fn](#stub-function)
+1. [tic-tac-toe](#tic-tac-toe-game)
 
 </details>
 
@@ -126,8 +127,10 @@ it("should count two time", (context) => {
 
 <img src="https://developer.mozilla.org/en-US/docs/Glossary/MVC/model-view-controller-light-blue.png" alt="MVC architecture" style="height: 500px; width:800px;"/>
 
-- expalined with Tic-Tac-Toe Game by Jayanth
-- [tic-tac-toe](./tic-tac-toe/ttt.js)
+- expalined by Jayanth with
+- #### Tic-Tac-Toe Game
+- [tic-tac-toe services](./tic-tac-toe/ttt.js)
+- [tic-tac-toe consumer](./tic-tac-toe/main.js)
 
 # Jun 9
 
