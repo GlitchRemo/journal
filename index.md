@@ -7,12 +7,12 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
 
 {::options parse_block_html="true" /}
 
+# **<p align=center>The Delta Matters</p>**
+
 # TODO
 
-- [ ] Take feedback on Jun 9 notes on Inheritance
-- [ ] Implement tic-tac-toe with game and controller class
+- [ ] Model Dino Game with MVC architecture
 - [ ] Take input in save the goat
-- [ ] Jump the dino
 - [ ] Appear balloon in Balloon Shooter
 
 ---
@@ -106,6 +106,10 @@ it("should count two time", (context) => {
 });
 ```
 
+- mock fn of context signature
+- `context.mock.fn(original stab fn, duplicate stab fn, {times: 2})`
+- it means original will be called for 2 times and duplicate will be called for the rest
+
 ### Stub Function
 
 - here schedule is a stub function
@@ -136,25 +140,23 @@ it("should count two time", (context) => {
 
 - Inheritance
 
-  - We can inherit properties and behaviours of a class
-  - ```js
-    class Derived extends Base {
-      constructor() {
-        super(); // reference to Base class
-      }
+- We can inherit properties and behaviours of a class
+- ```js
+  class Derived extends Base {
+    constructor() {
+      super(); // reference to Base class
     }
-    ```
-  - super should be the first thing to call inside a derived class constructor
-  - it internally calls the Base class constructor with the argument the constructor need
-  - using super keyword we can access the public fields of Base class
-  - there is a `is a` relationship between Base class and Derived class
-  - for example
-
-  ```js
-  class TimedCounter extends EventEmitter
+  }
   ```
+- super should be the first thing to call inside a derived class constructor
+- it internally calls the Base class constructor with the argument the constructor need
+- using super keyword we can access the public fields of Base class
+- there is a `is a` relationship between Base class and Derived class
+- for example
 
-````
+```js
+class TimedCounter extends EventEmitter
+```
 
 - TimedCounter `is a` EventEmitter
 - Every type in javascript is an Object
@@ -590,4 +592,3 @@ beforeEach(() => {
 ---
 
 {::options parse_block_html="false" /}
-````
