@@ -127,8 +127,7 @@ it("should count two time", (context) => {
 <img src="https://developer.mozilla.org/en-US/docs/Glossary/MVC/model-view-controller-light-blue.png" alt="MVC architecture" style="height: 500px; width:800px;"/>
 
 - expalined with Tic-Tac-Toe Game by Jayanth
-
-[tic-tac-toe](./tic-tac-toe/)
+- [tic-tac-toe](./tic-tac-toe/ttt.js)
 
 # Jun 9
 
