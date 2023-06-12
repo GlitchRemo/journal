@@ -7,7 +7,7 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
 
 {::options parse_block_html="true" /}
 
-# **<p align=center>The Delta Matters</p>**
+# **The Delta Matters**
 
 # TODO
 
@@ -24,11 +24,13 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
 1. [mock fn](#mock-function)
 1. [stub fn](#stub-function)
 1. [tic-tac-toe](#tic-tac-toe-game)
+1. [html](#html)
 
 </details>
 
 <details><summary markdown = "span">datewise log</summary>
 
+1. [Jun 12](#jun-12)
 1. [Jun 10](#jun-10)
 1. [Jun 9](#jun-9)
 1. [Jun 8](#jun-8)
@@ -44,6 +46,39 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
 </details>
 
 ---
+
+# Jun 12
+
+- ### HTML
+- html, body,
+- heading tags: h1, h2, h3, ... to h6.
+- paragraph p
+- bold b, italic i, underline u, break br.
+- lists:
+  - ordered and unordered.
+  - ol ul
+  - list item: li
+- table:
+
+  - table heading th.
+  - table row tr.
+  - table data td.
+
+- anchor: <a href="url here">Visit google</a>
+
+- head:
+- title:
+- what is Inline elements and block elements. Span is inline element.
+- pre tag
+- id
+- anchor tag with id
+- anchor tag with target "\_blank"
+- Styling
+- color, background-color, font-size, font-family, border-style, border-color, text-decoration, text-align
+
+- By default style get inherit , you can override style in child.
+- [Basic html tags](./html/index.html)
+- [Styling and Alignment](./html/marvel-movies.html)
 
 # Jun 10
 
@@ -205,11 +240,13 @@ class TimedCounter extends EventEmitter
 - If a bullet touch any balloon, the balloon will disappear and score increase
 - If a balloon touch upper wall, the balloon will blast and one life will decrease
 - ## Games Components
+
   1. Shooter
   2. Screen
   3. Bullet
   4. Balloon
   5. Scoreboard
+
 - Plan ->
   - Setup screen
   - Show screen
