@@ -671,10 +671,10 @@ beforeEach(() => {
 
 # Documentations
 
-| Topics     | Link                                                                      |
-| ---------- | ------------------------------------------------------------------------- |
-| HTML       | [mdn docs](https://developer.mozilla.org/en-US/docs/Web/HTML)             |
-| NODE       | [node.js](https://nodejs.org/docs/latest-carbon/api/repl.html)            |
+|   Topics   |                                   Link                                    |
+| :--------: | :-----------------------------------------------------------------------: |
+|    HTML    |       [mdn docs](https://developer.mozilla.org/en-US/docs/Web/HTML)       |
+|    NODE    |      [node.js](https://nodejs.org/docs/latest-carbon/api/repl.html)       |
 | JAVASCRIPT | [javascript mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
 
 {::options parse_block_html="false" /}
