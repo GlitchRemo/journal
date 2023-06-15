@@ -665,10 +665,9 @@ beforeEach(() => {
 
 # My Tech Interests Area
 
-- Started developing interests in Creative coding.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
-- Got a MIT playlist on Deep Learning.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
-
----
+- Creative coding.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
+- Deep Learning.[link here](https://www.youtube.com/watch?v=QDX-1M5Nj7s&list=PLwRL6Jiy2IlEf5QyyrXDJC-6FSjgNoPuc)
+- System Design.[link here](https://www.youtube.com/watch?v=70wXrS9PeRY&list=PLrk5tgtnMN6RvXrfflstJWgcPFQ_vTOV9)
 
 # Documentations
 
