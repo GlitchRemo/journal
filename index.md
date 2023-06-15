@@ -9,6 +9,17 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
 
 # **The Delta Matters**
 
+<details><summary markdown = "span">contents</summary>
+
+1. [Todo](#todo)
+1. [Step Classes](#step-classes)
+1. [Step 8 Games Takeaways](#step-8-games-takeaways)
+1. [Presentation Takeaways](#presentation-takeaways)
+1. [My Tech Interest Areas](#my-tech-interests-area)
+1. [Documentations](#documentations)
+
+</details>
+
 # TODO
 
 - [ ] Model Dino Game with MVC architecture
@@ -25,11 +36,14 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
 1. [stub fn](#stub-function)
 1. [tic-tac-toe](#tic-tac-toe-game)
 1. [html](#html)
+1. [containers](#containers)
 
 </details>
 
 <details><summary markdown = "span">datewise log</summary>
 
+1. [Jun 14](#jun-14)
+1. [Jun 13](#jun-13)
 1. [Jun 12](#jun-12)
 1. [Jun 10](#jun-10)
 1. [Jun 9](#jun-9)
@@ -46,6 +60,22 @@ Suggestions: Build common keywords links for easy access, start todo with a verb
 </details>
 
 ---
+
+# Jun 14
+
+- ### Containers
+- Learned about `<div>` tag
+- Some of them are `<header>` `<main>` `<footer>` `<section>` `<nav>`
+- `<nav>` is used to contain all the navigation links generally present at header of a page, like a hamburger icon for searching all apps
+- These are block elements
+- `FYA` - Table doesn't support text-alignment
+- Easy way to debug html code is by using border to see each element
+- Container tags attributes are inherited by the child tags
+
+# Jun 13
+
+- Learned `<img>` tag with html
+- Made Anushka Sharma's wikipedia page clone
 
 # Jun 12
 
@@ -619,6 +649,18 @@ beforeEach(() => {
 - Teach others
 - Give feedback
 
+> `Presentors: Barnali, Dileep, Roshan, Sourav D, Sai`
+
+- Account Name: Lenovo
+- Project Name:
+  - Barnali, Dileep: Project Unity
+  - Roshan: Dev Ops for 6 teams, 3 projects
+  - Sourav, Sai: Think Reality - AR/VR
+- Each person has to take responsibility of their learnings
+- Be curious
+- Showcase your work
+- Ask how
+
 ---
 
 # My Tech Interests Area
@@ -627,5 +669,13 @@ beforeEach(() => {
 - Got a MIT playlist on Deep Learning.[link here](https://youtube.com/playlist?list=PLUG_f-krxzVrRCOjGFwOuYj3QarVfPWXK)
 
 ---
+
+# Documentations
+
+| Topics     | Link                                                                      |
+| ---------- | ------------------------------------------------------------------------- |
+| HTML       | [mdn docs](https://developer.mozilla.org/en-US/docs/Web/HTML)             |
+| NODE       | [node.js](https://nodejs.org/docs/latest-carbon/api/repl.html)            |
+| JAVASCRIPT | [javascript mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
 
 {::options parse_block_html="false" /}
